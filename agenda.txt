@@ -31,12 +31,17 @@
     npm install
 - DONE: Start server
     DEBUG=daily-app-190720:* npm run devstart
-    
+- Install Jest
+    npm install --save-dev jest (https://medium.com/@ryanblahnik/setting-up-testing-with-jest-and-node-js-b793f1b5621e)
+    add
+        "test": "jest"
+    to "scripts" section of package.json
+    create files functions.js and functions.test.js
 
 
 
-- Learn how to switch to terminal using the keyboard
+- DONE: Learn how to switch to terminal using the keyboard
     ctrl+shift+`
-- Learn how to switch to another VSCode window
+- DONE: Learn how to switch to another VSCode window
     ctrl-w
     enter
