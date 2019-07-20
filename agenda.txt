@@ -18,17 +18,25 @@
     to package.json after "version" line
 - DONE: Create Heroku application
     heroku create daily-app-190720
-- Deploy application to Heroku
+- DONE: Deploy application to Heroku
     git push heroku master
-- Browse to app
+- DONE: Browse to app
     heroku open
-- Enable server restart on file changes
+- DONE: Enable server restart on file changes
     npm install --save-dev nodemon
     add
         "devstart": "nodemon ./bin/www"
     to "scripts" section of package.json
-- Install npm packages
+- DONE: Install npm packages
     npm install
-- Start server
+- DONE: Start server
     DEBUG=daily-app-190720:* npm run devstart
-- Add database functionality
+    
+
+
+
+- Learn how to switch to terminal using the keyboard
+    ctrl+shift+`
+- Learn how to switch to another VSCode window
+    ctrl-w
+    enter
