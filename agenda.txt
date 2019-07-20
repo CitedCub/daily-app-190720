@@ -1,5 +1,4 @@
 - DONE: Create node.js skeleton app with pug as template engine
-- Add database functionality
 - DONE: Create new github repository for the app with node .gitignore file
     curl -u 'CitedCub' https://api.github.com/user/repos -d '{"name":"daily-app-190720","gitignore_template":"Node"}'
 - DONE: Pull content from new github repository
@@ -7,7 +6,7 @@
     git remote add origin https://github.com/CitedCub/daily-app-190720.git
     git fetch --all
     git pull origin master
-- Push app to the repository
+- DONE: Push app to the repository
     git add -A
     git commit -m "Added app skeleton content"
     git push origin master
@@ -17,6 +16,19 @@
             "node":"10.15.1"
         }
     to package.json after "version" line
-- Create Heroku application
+- DONE: Create Heroku application
+    heroku create daily-app-190720
 - Deploy application to Heroku
+    git push heroku master
 - Browse to app
+    heroku open
+- Enable server restart on file changes
+    npm install --save-dev nodemon
+    add
+        "devstart": "nodemon ./bin/www"
+    to "scripts" section of package.json
+- Install npm packages
+    npm install
+- Start server
+    DEBUG=daily-app-190720:* npm run devstart
+- Add database functionality
