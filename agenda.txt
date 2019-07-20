@@ -37,7 +37,8 @@
         "test": "jest"
     to "scripts" section of package.json
     create files functions.js and functions.test.js
-
+- Run test
+    npm test
 
 
 - DONE: Learn how to switch to terminal using the keyboard
