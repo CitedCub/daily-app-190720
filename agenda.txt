@@ -1,13 +1,22 @@
 - DONE: Create node.js skeleton app with pug as template engine
-- Create github repository for the app with node .gitignore file
+- Add database functionality
+- DONE: Create new github repository for the app with node .gitignore file
     curl -u 'CitedCub' https://api.github.com/user/repos -d '{"name":"daily-app-190720","gitignore_template":"Node"}'
-- Push app to the repository
+- DONE: Pull content from new github repository
     git init
     git remote add origin https://github.com/CitedCub/daily-app-190720.git
     git fetch --all
     git pull origin master
-- Add database functionality
-- Update the app for Heroku
+- Push app to the repository
+    git add -A
+    git commit -m "Added app skeleton content"
+    git push origin master
+- DONE: Update the app for Heroku
+    Add 
+        "engines": {
+            "node":"10.15.1"
+        }
+    to package.json after "version" line
 - Create Heroku application
 - Deploy application to Heroku
 - Browse to app
