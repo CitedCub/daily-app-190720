@@ -31,13 +31,13 @@
     npm install
 - DONE: Start server
     DEBUG=daily-app-190720:* npm run devstart
-- Install Jest
+- DONE: Install Jest
     npm install --save-dev jest (https://medium.com/@ryanblahnik/setting-up-testing-with-jest-and-node-js-b793f1b5621e)
     add
         "test": "jest"
-    to "scripts" section of package.json
+    to "scripts" section of package.json (https://www.youtube.com/watch?v=7r4xVDI2vho)
     create files functions.js and functions.test.js
-- Run test
+- DONE: Run test
     npm test
 
 
